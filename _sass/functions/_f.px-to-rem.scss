@@ -1,0 +1,17 @@
+// ====================================
+// FUNCTIONS: PIXELS TO REMS
+// ====================================
+
+@function px-to-rem($target, $context: $font-size-base) {
+  // Throw an error if $target is not specified with pixels or equal to zero
+  @if (unit($target) != "px" and $target != 0) {
+    @error("This mixin requires a value in pixels or equal to zero");
+  }
+
+  // Return zero or rem value
+  @if (unit($target) == "px") {
+    @return ($target / $context) * 1rem;
+  } @else {
+    @return 0;
+  }
+}

@@ -1,0 +1,48 @@
+/* ====================================
+ * COMPONENTS: PAGE INTRO
+ * ================================= */
+
+// Settings
+// ====================================
+
+/* Page intro block
+ * ================================= */
+
+.c-page-intro {
+  margin-right: px-to-rem(-$spacing-base * 3);
+  margin-left: px-to-rem(-$spacing-base * 3);
+  background-color: $color-white;
+
+  @include media-query("l") {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-right: px-to-rem(-$spacing-base * 5);
+    margin-left: px-to-rem(-$spacing-base * 5);
+  }
+}
+
+/* Text element
+ * ================================= */
+
+.c-page-intro__text {
+  padding: px-to-rem($spacing-base * 5);
+
+  & > p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/* Image element
+ * ================================= */
+
+.c-page-intro__image {
+  & > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @include media-query("l") {
+    order: 2;
+  }
+}

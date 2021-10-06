@@ -1,0 +1,52 @@
+/* ====================================
+ * OBJECTS: CONTAINER
+ * ================================= */
+
+// Settings
+// ====================================
+
+$container-width-s:  540px !default;
+$container-width-m:  720px !default;
+$container-width-l:  960px !default;
+$container-width-xl: 1140px !default;
+
+/* Container block
+ * ================================= */
+
+.o-container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: px-to-rem($spacing-base * 3);
+  padding-left: px-to-rem($spacing-base * 3);
+  // background-color: blue;
+}
+
+@include media-query("s") {
+  .o-container {
+    max-width: px-to-rem($container-width-s);
+    // background-color: green;
+  }
+}
+
+@include media-query("m") {
+  .o-container {
+    padding-right: px-to-rem($spacing-base * 5);
+    padding-left: px-to-rem($spacing-base * 5);
+    max-width: px-to-rem($container-width-m);
+    // background-color: yellow;
+  }
+}
+
+@include media-query("l") {
+  .o-container {
+    max-width: px-to-rem($container-width-l);
+    // background-color: orange;
+  }
+}
+
+@include media-query("xl") {
+  .o-container {
+    max-width: px-to-rem($container-width-xl);
+    // background-color: red;
+  }
+}

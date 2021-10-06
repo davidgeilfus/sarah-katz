@@ -1,0 +1,76 @@
+/* ====================================
+ * COMPONENTS: SITE HEADER
+ * ================================= */
+
+// Settings
+// ====================================
+
+/* Site header block
+ * ================================= */
+
+.c-site-header {
+  padding-top: px-to-rem($spacing-base * 5);
+  padding-bottom: px-to-rem($spacing-base * 5);
+  background-color: $color-pink-light;
+
+  @include media-query("m") {
+    padding-top: px-to-rem($spacing-base * 10);
+    padding-bottom: px-to-rem($spacing-base * 10);
+  }
+}
+
+/* Top element
+ * ================================= */
+
+.c-site-header__top {
+  margin-bottom: px-to-rem($spacing-base * 2);
+
+  @include media-query("m") {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+/* Name element
+ * ================================= */
+
+.c-site-header__name {
+  flex: 1;
+  margin-bottom: px-to-rem($spacing-base * 2);
+  font-weight: $font-weight-medium;
+  font-size: px-to-rem($font-size-h1);
+  line-height: ($line-height-h1 / $font-size-h1);
+  letter-spacing: $letter-spacing-h1;
+
+  @include media-query("m") {
+    margin-bottom: 0;
+  }
+}
+
+/* Phone element
+ * ================================= */
+
+.c-site-header__phone {
+  padding-top: px-to-rem($spacing-base);
+  padding-bottom: px-to-rem($spacing-base);
+  color: $color-black;
+  text-decoration: none;
+  transition: transform .2s ease-out;
+
+  &:hover {
+    transform: translate3d(0, #{px-to-rem(-5px)}, 0);
+  }
+}
+
+/* Title element
+ * ================================= */
+
+.c-site-header__title {
+  margin-bottom: 0;
+  font-weight: $font-weight-regular;
+  font-size: px-to-rem($font-size-h3);
+  line-height: ($line-height-h3 / $font-size-h3);
+  letter-spacing: $letter-spacing-h3;
+}

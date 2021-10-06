@@ -1,0 +1,28 @@
+/* ====================================
+ * BASE: MARGINS
+ * ================================= */
+
+/**
+ * 1. Remove top margins (unidirectional margins).
+ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+dl,
+address,
+blockquote,
+pre,
+figure,
+hr,
+audio
+video {
+  margin-top: 0; /* [1] */
+  margin-bottom: $spacing-base;
+}

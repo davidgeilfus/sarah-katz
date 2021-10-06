@@ -1,0 +1,20 @@
+// ====================================
+// MIXINS: MEDIA QUERY
+// ====================================
+
+@mixin media-query($breakpoint) {
+  @if (map-has-key($breakpoints-map, $breakpoint)) {
+    // Get the parameter from the first map
+    $breakpoint-params: map-get($breakpoints-map, $breakpoint);
+
+    // Get the query from the nested map
+    $breakpoint-query: map-get($breakpoint-params, "query");
+
+    // Output content rules in media query
+    @media #{$breakpoint-query} {
+      @content;
+    }
+  } @else {
+    @error("#{$breakpoint} is not listed in the keys of $breakpoints-list");
+  }
+}

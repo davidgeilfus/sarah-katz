@@ -1,0 +1,53 @@
+<!doctype html>
+
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Sarah Katz</title>
+    <meta name="description" content="Psychologue clinicienne et psychotraumatologue.">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{{ "/css/main.css" | relative_url }}">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Sarah Katz">
+    <meta property="og:description" content="Psychologue clinicienne et psychotraumatologue.">
+    <meta property="og:url" content="https://sarahkatz.be/">
+    <meta property="og:image" content="/assets/images/thumbnail.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:title" content="Sarah Katz">
+    <meta property="twitter:description" content="Psychologue clinicienne et psychotraumatologue.">
+    <meta property="twitter:url" content="https://sarahkatz.be/">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:image" content="/assets/images/thumbnail.png">
+  </head>
+
+  <body>
+    <header class="c-site-header" role="banner">
+      <div class="o-container">
+        <div class="c-site-header__top">
+          <h1 class="c-site-header__name">Sarah Katz</h1>
+          <a href="tel:+32479401229" title="Rendez-vous par téléphone ou SMS au +32 479 40 12 29" class="c-site-header__phone">
+            <span class="c-icon c-icon--mobile"></span>
+            +32 479 40 12 29
+          </a>
+        </div>
+        <div class="c-site-header__bottom">
+          <h2 class="c-site-header__title">Psychologue clinicienne et psychotraumatologue</h2>
+        </div>
+      </div>
+    </header>
+
+    <main role="main">
+      {{ content }}
+    </main>
+
+    <footer class="c-site-footer" role="contentinfo">
+      © {{ site.time | date: '%Y' }} – Sarah Katz
+    </footer>
+  </body>
+</html>

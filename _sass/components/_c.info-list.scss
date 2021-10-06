@@ -1,0 +1,37 @@
+/* ====================================
+ * COMPONENTS: INFO LIST
+ * ================================= */
+
+// Settings
+// ====================================
+
+/* Info list block
+ * ================================= */
+
+.c-info-list {
+  @include list-reset;
+}
+
+/* Item element
+ * ================================= */
+
+.c-info-list__item {
+  display: flex;
+  margin-bottom: px-to-rem($spacing-base * 3);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/* Icon element
+ * ================================= */
+
+.c-info-list__icon {
+  margin: px-to-rem(3px) 0;
+  margin-right: px-to-rem($spacing-base * 3);
+
+  @include media-query("l") {
+    margin-right: px-to-rem($spacing-base * 5);
+  }
+}

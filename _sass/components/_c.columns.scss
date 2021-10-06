@@ -1,0 +1,16 @@
+/* ====================================
+ * COMPONENTS: COLUMNS
+ * ================================= */
+
+// Settings
+// ====================================
+
+/* Columns block
+ * ================================= */
+
+.c-columns {
+  @include media-query("m") {
+    column-count: 2;
+    column-gap: px-to-rem($spacing-base * 5);
+  }
+}

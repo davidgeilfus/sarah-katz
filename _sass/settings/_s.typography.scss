@@ -1,0 +1,49 @@
+// ====================================
+// SETTINGS: TYPOGRAPHY
+// ====================================
+
+// Font stacks
+// ====================================
+
+$font-stack-sans: ("Inter", "Helvetica Neue", Arial, Helvetica, sans-serif) !default;
+
+// Font weights
+// ====================================
+
+$font-weight-regular:  400 !default;
+$font-weight-medium:   500 !default;
+$font-weight-semibold: 600 !default;
+$font-weight-bold:     700 !default;
+
+// Font sizes
+// ====================================
+
+// Font sizes are based on a minor third typographic scale:
+// 1. Math.round(17 * 2.48832)
+// 2. Math.round(17 * 2.0736)
+// 3. Math.round(17 * 1.728)
+
+$font-size-base: 17px !default;
+$font-size-h1:   42px !default; // [1]
+$font-size-h2:   35px !default; // [2]
+$font-size-h3:   29px !default; // [3]
+
+// Line heights
+// ====================================
+
+// 1. Closest integer to (42 * 1.25) that is divisible by 5.
+// 2. Closest integer to (35 * 1.25) that is divisible by 5.
+// 3. Closest integer to (29 * 1.25) that is divisible by 5.
+
+$line-height-base: 30px !default;
+$line-height-h1:   50px !default; // [1]
+$line-height-h2:   45px !default; // [2]
+$line-height-h3:   35px !default; // [3]
+
+// Letter spacings
+// ====================================
+
+$letter-spacing-base: -.013em !default;
+$letter-spacing-h1:   -.022em !default;
+$letter-spacing-h2:   -.021em !default;
+$letter-spacing-h3:   -.019em !default;

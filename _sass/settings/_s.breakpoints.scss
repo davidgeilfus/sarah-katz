@@ -1,0 +1,23 @@
+// ====================================
+// SETTINGS: BREAKPOINTS
+// ====================================
+
+// Small devices (landscape phones): 576px and up
+// Medium devices (tablets): 768px and up
+// Large devices (desktops): 992px and up
+// Extra large devices (large desktops): 1200px and up
+
+$breakpoints-map: (
+  "s": (
+    query: "all and (min-width: 576px)"
+  ),
+  "m": (
+    query: "all and (min-width: 768px)"
+  ),
+  "l": (
+    query: "all and (min-width: 992px)"
+  ),
+  "xl": (
+    query: "all and (min-width: 1200px)"
+  ),
+) !default;
