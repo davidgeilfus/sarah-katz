@@ -20,7 +20,10 @@
  * ================================= */
 
 .c-section--split {
-  background: linear-gradient($color-pink-light 50%, $color-white 50%);
+  background-image: url("/assets/images/section-bg.svg"), linear-gradient($color-pink-light 50%, $color-white 50%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100px, contain;
 }
 
 /* Header element
