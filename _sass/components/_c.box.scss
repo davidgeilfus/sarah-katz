@@ -11,8 +11,12 @@
 .c-box {
   margin-right: px-to-rem(-$spacing-base * 3);
   margin-left: px-to-rem(-$spacing-base * 3);
-  padding: px-to-rem($spacing-base * 5);
+  padding: px-to-rem($spacing-base * 3);
   background-color: $color-gray-light;
+
+  @include media-query("m") {
+    padding: px-to-rem($spacing-base * 5);
+  }
 
   @include media-query("l") {
     margin-right: px-to-rem($spacing-base * 10);

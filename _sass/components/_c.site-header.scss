@@ -39,10 +39,7 @@
 .c-site-header__name {
   flex: 1;
   margin-bottom: px-to-rem($spacing-base * 2);
-  font-weight: $font-weight-medium;
-  font-size: px-to-rem($font-size-h1);
-  line-height: ($line-height-h1 / $font-size-h1);
-  letter-spacing: $letter-spacing-h1;
+  @extend h1;
 
   @include media-query("m") {
     margin-bottom: 0;
@@ -69,8 +66,5 @@
 
 .c-site-header__title {
   margin-bottom: 0;
-  font-weight: $font-weight-regular;
-  font-size: px-to-rem($font-size-h3);
-  line-height: ($line-height-h3 / $font-size-h3);
-  letter-spacing: $letter-spacing-h3;
+  @extend h3;
 }

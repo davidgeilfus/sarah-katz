@@ -8,8 +8,8 @@
 /* Columns block
  * ================================= */
 
-.c-columns {
-  @include media-query("m") {
+ @include media-query("m") {
+  .c-columns {
     column-count: 2;
     column-gap: px-to-rem($spacing-base * 5);
   }

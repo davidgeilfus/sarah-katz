@@ -28,6 +28,7 @@
  * ================================= */
 
 .c-info-list__icon {
+  flex-shrink: 0;
   margin: px-to-rem(3px) 0;
   margin-right: px-to-rem($spacing-base * 3);
 

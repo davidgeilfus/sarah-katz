@@ -44,10 +44,7 @@
 .c-section__title {
   grid-area: title;
   margin-bottom: px-to-rem($spacing-base * 2);
-  font-weight: $font-weight-medium;
-  font-size: px-to-rem($font-size-h2);
-  line-height: ($line-height-h2 / $font-size-h2);
-  letter-spacing: $letter-spacing-h2;
+  @extend h2;
 }
 
 /* Intro element

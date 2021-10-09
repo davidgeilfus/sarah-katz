@@ -13,11 +13,14 @@
   margin-left: px-to-rem(-$spacing-base * 3);
   background-color: $color-white;
 
+  @include media-query("m") {
+    margin-right: px-to-rem(-$spacing-base * 5);
+    margin-left: px-to-rem(-$spacing-base * 5);
+  }
+
   @include media-query("l") {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin-right: px-to-rem(-$spacing-base * 5);
-    margin-left: px-to-rem(-$spacing-base * 5);
   }
 }
 
@@ -25,10 +28,14 @@
  * ================================= */
 
 .c-page-intro__text {
-  padding: px-to-rem($spacing-base * 5);
+  padding: px-to-rem($spacing-base * 3);
 
   & > p:last-child {
     margin-bottom: 0;
+  }
+
+  @include media-query("m") {
+    padding: px-to-rem($spacing-base * 5);
   }
 }
 
